@@ -23,12 +23,15 @@ public:
 	//make us into new nfa under kleene closure
 	void kleene();
 
+	//create a string from this nfa
 	std::string serialize();
 private:
-
+	//the starting pointer
 	std::shared_ptr<State> start;
+	//the ending pointer
 	std::shared_ptr<State> end;
 
+	//all of the states, stored in no clearly defined order
 	std::set<std::shared_ptr<State>> states;
 };
 #endif // !NFA_H
