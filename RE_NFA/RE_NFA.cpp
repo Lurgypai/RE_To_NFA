@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 				//for every character in the line
 				for (auto& c : line) {
 					//if its a letter, create an nfa for it and put it on top of the stack
-					if (c == 'a' || c == 'b' || c == 'd' || c == 'e') {
+					if (c == 'a' || c == 'b' || c == 'c' || c == 'd' || c == 'e') {
 						stack.emplace_front(NFA{ c });
 					}
 					//if its an empty letter, create the empty letter nfa
